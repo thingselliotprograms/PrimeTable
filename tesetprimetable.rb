@@ -53,7 +53,7 @@ def displayprimetable(pary)
         end
         puts
     end
-    return pary #used for correct group of primes gathered
+    return pary #used for testing the correct group of primes gathered
 end
 
 
