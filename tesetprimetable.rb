@@ -1,4 +1,4 @@
-def firstnprimes(n)
+def firstnprimes(n=10)
     #Validation
     #unlike in the real program, this will quit out upon bad arguments
     #so that the tests do not hang waiting for input
@@ -59,6 +59,7 @@ end
 
 def testprimetable
     [2,3,5,7,11,13,17,19,23,29] == firstnprimes(10) ? (puts "First 10 primes test succeeded!") : (puts "First 10 primes test FAILED")
+    [2,3,5,7,11,13,17,19,23,29] == firstnprimes() ? (puts "No argument primes test succeeded!") : (puts "No argument primes test FAILED")    
     [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71]  == firstnprimes(20) ? (puts "First 20 primes test succeeded!") : (puts "First 20 primes test FAILED")
     "Bad Argument Given" == firstnprimes(0) ? (puts "Argument of 0 quit successfully!") : (puts "Argument of 0 failed test") 
     "Bad Argument Given" == firstnprimes(-10) ? (puts "Argument of -10 quit successfully!") : (puts "Argument of -10 failed test")

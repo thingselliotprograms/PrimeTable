@@ -1,4 +1,4 @@
-def firstnprimes(n)
+def firstnprimes(n=10) #if nothing given it runs for 10 primes
     #Validation
     if (!(n.is_a? Integer))||(n<1)
         puts "Argument must be a positive integer."
